@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #323232; /* 背景颜色（深灰色） */
+    overflow: hidden;      /* 清除浮动 */
+    position: fixed; /* 固定定位 */
+    width: 100%;    /* 占满宽度 */
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    top: 5px;
+}
+
+/* 导航链接样式 */
+.navbar a {
+    color: white;          /* 文字颜色 */
+    text-align: center;    /* 文字居中 */
+    padding: 13px 20px;    /* 内边距（上下14px，左右16px） */
+    text-decoration: none;/* 去除下划线 */
+    font-size: 15px;       /* 字体大小 */
+    float: left;           /* 水平排列链接 */
+    border-radius: 10px;
+}
+
+/* 鼠标悬停效果 */
+.navbar a:hover {
+    background-color: #dedede4a; /* 背景变浅灰 */
+    color: black;          /* 文字变黑 */
+}
+
+/* 当前选中项（可选） */
+.navbar a.active {
+    background-color: #00b7ffbd; /*背景*/
+    color: white;
+    border-radius: 10px
+}
+.navbar a.active:hover {
+    background-color: #00b7ff; /*背景*/
+    color: white;
+    border-radius: 10px
+}
+/* 内容区域增加顶部边距，避免被导航栏遮挡 */
+body {
+    margin-top: 50px; 
+}
